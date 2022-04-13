@@ -1,5 +1,5 @@
 
-url_data = "http://127.0.0.1:5000/data/api";
+url_data = "http://127.0.0.1:5000/cropdata/api";
 
 d3.json(url_data).then(data => {
   // console.log(data);

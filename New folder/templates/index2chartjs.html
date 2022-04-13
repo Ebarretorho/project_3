@@ -1,6 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    .chartMenu {
+        width: 100vw;
+        height: 40px;
+        background: #1A1A1A;
+        color: rgb(177, 243, 106);
+    }
+
+    .chartMenu p {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    .chartCard {
+        width: 100vw;
+        height: calc(44vh - 40px);
+        background: rgba(249, 250, 250, 0.918);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .chartSpacing {
+        width: 5px;
+        background:rgba(249, 250, 250, 0.918);
+    }
+
+    .chartBox {
+        width: 500px;
+        padding: 20px;
+        border-radius: 20px;
+        border: solid 3px rgb(108, 183, 245);
+        background: rgba(249, 250, 250, 0.918);
+    }
+</style>
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,37 +83,26 @@
             </ul>
         </div>
     </nav>
-
-
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-4">Crop Production</h1>
-            <p class="lead">a look at the last 42 years</p>
-            <hr class="my-4">
-            <p>we have gather data for the the US production of crops in the last 42 years, while the us produces many
-                types of crops we have focused on the top 9</p>
-            <a class="btn btn-primary btn-lg" href="/Dashboard" role="button">See our crop Dashboard</a>
-            <a class="btn btn-primary btn-lg" href="/Dashboard" role="button">Check our Interactive Map</a>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="myChartvalue"></canvas>
+            <script src="static/js/plotvalchartjs.js"></script>
+        </div>
+        <div class="chartSpacing"></div>
+        <div class="chartBox">
+            <canvas id="myChartvol"></canvas>
+            <script src="static/js/plotvalchartjs.js"></script>
         </div>
     </div>
-
-    <div class="container text-left">
-        <h3>YoY trend for total monetary value of crops produced in the US (top 8 crops)</h3>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-10" id="plotval"></div>
-            <script src="static/js/plotvalue.js"></script>
+    <div class="chartCard">
+        <div class="chartBox">
+            <canvas id="myChartrain"></canvas>
+            <script src="static/js/plotvalchartjs.js"></script>
         </div>
-    </div>
-
-    <div class="container text-left">
-        <h3>YoY trend for total volume produced in the US (top 8 crops)</h3>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-10" id="plotvol"></div>
-            <script src="static/js/plotvolume.js"></script>
+        <div class="chartSpacing"></div>
+        <div class="chartBox">
+            <canvas id="myCharttemps"></canvas>
+            <script src="static/js/plotvalchartjs.js"></script>
         </div>
     </div>
 

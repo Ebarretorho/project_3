@@ -1,5 +1,5 @@
 
-url_data = "http://127.0.0.1:5000/data/api";
+url_data = "http://127.0.0.1:5000/cropdata/api";
 
 d3.json(url_data).then(data => {
     // console.log(data);
@@ -61,7 +61,7 @@ d3.json(url_data).then(data => {
 
     var traceData = [corn, barley, cotton, hay, oats_, rice, sorghum, soybeans_, wheat];
 
-    // Apply the group barmode to the layout
+    
     let layout = {
         title: "Yearly production volume per crop",
         xaxis: {

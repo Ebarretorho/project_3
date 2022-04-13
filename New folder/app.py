@@ -34,7 +34,13 @@ def index():
 
     return render_template("index.html")
 
-@app.route("/data/api")
+@app.route("/Dashboard")
+def dashboard():
+
+    return render_template("index2chartjs.html")
+
+
+@app.route("/cropdata/api")
 def data_crops():
     all_crops = []
     for year, commodity , value, volume, price, temp, rain in results:
