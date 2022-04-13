@@ -24,7 +24,7 @@ app = Flask(__name__)
 # Flask Routes
 #################################################
 session = Session(engine)
-results = engine.execute('SELECT * FROM crops_climate_data').fetchall()
+results = engine.execute('SELECT * FROM crops_climate_data ORDER BY "SurveyYear"').fetchall()
 session.close()
 
 
