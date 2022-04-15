@@ -77,26 +77,26 @@ d3.json(url_data).then(data => {
     wheat_rain = wheats.map(row => row.totalprecipitation)
 
     // Data trace array
-    var corn = { x: corn_years, y: corn_value, type: "scatter", name: "Corn" };
-    console.log(corn);
-    var barley = { x: barley_years, y: barley_value, mode: "scatter", name: "Barley" };
-    console.log(barley);
-    var cotton = { x: cotton_years, y: cotton_value, mode: "scatter", name: "Cotton" };
-    console.log(cotton);
-    var hay = { x: hay_years, y: hay_value, mode: "scatter", name: "Hay" };
-    console.log(hay);
-    var oats_ = { x: oats_years, y: oats_value, mode: "scatter", name: "Oats" };
-    console.log(oats_);
-    var rice = { x: rice_years, y: rice_value, mode: "scatter", name: "Rice" };
-    console.log(rice);
-    var sorghum = { x: sorghum_years, y: sorghum_value, mode: "scatter", name: "Sorghum" };
-    console.log(sorghum);
-    var soybeans_ = { x: soybeans_years, y: soybeans_value, mode: "scatter", name: "Soybeans" };
-    console.log(soybeans_);
-    var wheat = { x: wheat_years, y: wheat_value, mode: "scatter", name: "Wheat" };
-    console.log(wheat);
+    //var corn = { x: corn_years, y: corn_value, type: "scatter", name: "Corn" };
+    //console.log(corn);
+    //var barley = { x: barley_years, y: barley_value, mode: "scatter", name: "Barley" };
+    //console.log(barley);
+    //var cotton = { x: cotton_years, y: cotton_value, mode: "scatter", name: "Cotton" };
+    //console.log(cotton);
+    //var hay = { x: hay_years, y: hay_value, mode: "scatter", name: "Hay" };
+    //console.log(hay);
+    //var oats_ = { x: oats_years, y: oats_value, mode: "scatter", name: "Oats" };
+    //console.log(oats_);
+    //var rice = { x: rice_years, y: rice_value, mode: "scatter", name: "Rice" };
+    //console.log(rice);
+    // var sorghum = { x: sorghum_years, y: sorghum_value, mode: "scatter", name: "Sorghum" };
+    // console.log(sorghum);
+    // var soybeans_ = { x: soybeans_years, y: soybeans_value, mode: "scatter", name: "Soybeans" };
+    // console.log(soybeans_);
+    // var wheat = { x: wheat_years, y: wheat_value, mode: "scatter", name: "Wheat" };
+    // console.log(wheat);
 
-    var traceData = [corn, barley, cotton, hay, oats_, rice, sorghum, soybeans_, wheat];
+    //var traceData = [corn, barley, cotton, hay, oats_, rice, sorghum, soybeans_, wheat];
 
     var mychartvalue = document.getElementById('myChartvalue');
 
