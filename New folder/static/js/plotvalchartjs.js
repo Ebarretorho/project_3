@@ -98,7 +98,7 @@ d3.json(url_data).then(data => {
 
     //var traceData = [corn, barley, cotton, hay, oats_, rice, sorghum, soybeans_, wheat];
 
-    var mychartvalue = document.getElementById('myChartvalue');
+    var mychartvalue = document.getElementById('myChartvalue1');
 
     let mychartvalue_ = new Chart(mychartvalue, {
         type: 'line',
@@ -152,18 +152,19 @@ d3.json(url_data).then(data => {
             ]
         },
         options: {
-            title: {
-                display: true,
-                text: "YoY $Value trends by Crop",
-            },
-            legend: {
-                position: 'right'
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Revenue YoY'
+                }
             }
         }
+    });
 
-    })
-
-    var mychartvol = document.getElementById('myChartvol');
+    var mychartvol = document.getElementById('myChartvol1');
 
     let chart2 = new Chart(mychartvol, {
         type: 'line',
@@ -216,9 +217,21 @@ d3.json(url_data).then(data => {
             }
             ]
         },
-    })
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Production Volume YoY'
 
-    var mychartrain = document.getElementById('myChartrain');
+                }
+            }
+        }
+    });
+
+    var mychartrain = document.getElementById('myChartrain1');
 
     let chart3 = new Chart(mychartrain, {
         type: 'line',
@@ -271,9 +284,20 @@ d3.json(url_data).then(data => {
             }
             ]
         },
-    })
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                },
+                title: {
+                    display: true,
+                    text: 'Precipitation by year',
+                }
+            }
+        }
+    });
 
-    var mycharttemp = document.getElementById('myCharttemps');
+    var mycharttemp = document.getElementById('myCharttemps1');
 
     let chart4 = new Chart(mycharttemp, {
         type: 'line',
@@ -325,7 +349,20 @@ d3.json(url_data).then(data => {
                 backgroundColor: 'grey'
             }
             ]
-        }
+        },
+        options: {
+            plugins: {
+                legend: {
+                    display: false
+                }
+                ,
+                title: {
+                    display: true,
+                    text: 'Avg Temperature F°'
 
+                }
+            }
+
+        }
     })
 });
