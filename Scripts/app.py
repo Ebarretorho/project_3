@@ -32,12 +32,12 @@ session.close()
 @app.route("/")
 def index():
 
-    return render_template("index.html")
+    return render_template("index2.html")
 
 @app.route("/Dashboard")
 def dashboard():
 
-    return render_template("index2chartjs.html")
+    return render_template("index2charts2.html")
 
 
 @app.route("/cropdata/api")

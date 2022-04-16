@@ -105,48 +105,48 @@ d3.json(url_data).then(data => {
         data: {
             labels: corn_years,
             datasets: [{
-                label: "Corn $",
+                label: "Corn",
                 data: corn_value,
                 backgroundColor: 'blue'
             },
             {
-                label: "Wheat $",
+                label: "Wheat",
                 data: wheat_value,
                 backgroundColor: 'green'
             },
             {
-                label: "Rice $",
+                label: "Rice",
                 data: rice_value,
                 backgroundColor: 'red'
             },
             {
-                label: "Hay $",
+                label: "Hay",
                 data: hay_value,
                 backgroundColor: 'yellow'
             },
             {
-                label: "Oats $",
+                label: "Oats",
                 data: oats_value,
                 backgroundColor: 'orange'
             },
             {
-                label: "Cotton $",
+                label: "Cotton",
                 data: cotton_value,
                 backgroundColor: 'purple'
             },
             {
-                label: "Sorghum $",
+                label: "Sorghum",
                 data: sorghum_value,
                 backgroundColor: 'pink'
             },
             {
-                label: "Soybeans $",
+                label: "Soybeans",
                 data: soybeans_value,
                 backgroundColor: 'brown'
             },
             {
-                label: "Barley $",
-                data: wheat_value,
+                label: "Barley",
+                data: barley_value,
                 backgroundColor: 'grey'
             }
             ]
@@ -154,7 +154,8 @@ d3.json(url_data).then(data => {
         options: {
             plugins: {
                 legend: {
-                    display: false
+                    display: true,
+                    position: "right"
                 },
                 title: {
                     display: true,
@@ -171,48 +172,48 @@ d3.json(url_data).then(data => {
         data: {
             labels: corn_years,
             datasets: [{
-                label: "Corn Vol",
+                label: "Corn",
                 data: corn_volume,
                 backgroundColor: 'blue'
             },
             {
-                label: "Wheat Vol",
+                label: "Wheat",
                 data: wheat_volume,
                 backgroundColor: 'green'
             },
             {
-                label: "Rice Vol",
+                label: "Rice",
                 data: rice_volume,
                 backgroundColor: 'red'
             },
             {
-                label: "Hay Vol",
+                label: "Hay",
                 data: hay_volume,
                 backgroundColor: 'yellow'
             },
             {
-                label: "Oats Vol",
+                label: "Oats",
                 data: oats_volume,
                 backgroundColor: 'orange'
             },
             {
-                label: "Cotton Vol",
+                label: "Cotton",
                 data: cotton_volume,
                 backgroundColor: 'purple'
             },
             {
-                label: "Sorghum Vol",
+                label: "Sorghum",
                 data: sorghum_volume,
                 backgroundColor: 'pink'
             },
             {
-                label: "Soybeans Vol",
+                label: "Soybeans",
                 data: soybeans_volume,
                 backgroundColor: 'brown'
             },
             {
-                label: "Barley Vol",
-                data: wheat_volume,
+                label: "Barley",
+                data: barley_volume,
                 backgroundColor: 'grey'
             }
             ]
@@ -220,7 +221,8 @@ d3.json(url_data).then(data => {
         options: {
             plugins: {
                 legend: {
-                    display: false
+                    display: true,
+                    position: 'right'
                 },
                 title: {
                     display: true,
@@ -238,48 +240,48 @@ d3.json(url_data).then(data => {
         data: {
             labels: corn_years,
             datasets: [{
-                label: "Inces",
+                label: "Corn",
                 data: corn_rain,
                 backgroundColor: 'blue'
             },
             {
-                label: "Inches",
+                label: "Wheat",
                 data: wheat_rain,
                 backgroundColor: 'green'
             },
             {
-                label: "Inches",
+                label: "Rice",
                 data: rice_rain,
                 backgroundColor: 'red'
             },
             {
-                label: "Inches",
+                label: "Hay",
                 data: hay_rain,
                 backgroundColor: 'yellow'
             },
             {
-                label: "Inches",
+                label: "Oats",
                 data: oats_rain,
                 backgroundColor: 'orange'
             },
             {
-                label: "Inches",
+                label: "Cotton",
                 data: cotton_rain,
                 backgroundColor: 'purple'
             },
             {
-                label: "Inches",
+                label: "Sorghum",
                 data: sorghum_rain,
                 backgroundColor: 'pink'
             },
             {
-                label: "Inches",
+                label: "Soybeans",
                 data: soybeans_rain,
                 backgroundColor: 'brown'
             },
             {
-                label: "Inches",
-                data: wheat_rain,
+                label: "Barley",
+                data: barley_rain,
                 backgroundColor: 'grey'
             }
             ]
@@ -287,7 +289,8 @@ d3.json(url_data).then(data => {
         options: {
             plugins: {
                 legend: {
-                    display: false
+                    display: true,
+                    position: 'right'
                 },
                 title: {
                     display: true,
@@ -304,48 +307,48 @@ d3.json(url_data).then(data => {
         data: {
             labels: corn_years,
             datasets: [{
-                label: "Temp",
+                label: "Corn",
                 data: corn_temps,
                 backgroundColor: 'blue'
             },
             {
-                label: "Temp",
+                label: "Wheat",
                 data: wheat_temps,
                 backgroundColor: 'green'
             },
             {
-                label: "Temp",
+                label: "Rice",
                 data: rice_temps,
                 backgroundColor: 'red'
             },
             {
-                label: "Temp",
+                label: "Hay",
                 data: hay_temps,
                 backgroundColor: 'yellow'
             },
             {
-                label: "Temp",
+                label: "Oats",
                 data: oats_temps,
                 backgroundColor: 'orange'
             },
             {
-                label: "Temp",
+                label: "Cotton",
                 data: cotton_temps,
                 backgroundColor: 'purple'
             },
             {
-                label: "Temp",
+                label: "Sorghum",
                 data: sorghum_temps,
                 backgroundColor: 'pink'
             },
             {
-                label: "Temp",
+                label: "Soybeans",
                 data: soybeans_temps,
                 backgroundColor: 'brown'
             },
             {
-                label: "Temp",
-                data: wheat_temps,
+                label: "Barley",
+                data: barley_temps,
                 backgroundColor: 'grey'
             }
             ]
@@ -353,7 +356,8 @@ d3.json(url_data).then(data => {
         options: {
             plugins: {
                 legend: {
-                    display: false
+                    display: true,
+                    position: 'right'
                 }
                 ,
                 title: {
